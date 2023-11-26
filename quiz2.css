@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body{
+    background-color: lightgrey;
+    overflow-y: hidden;
+}
+.tim{
+    width: 200px;
+    height: 70px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 9px;
+    position: relative;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+.quizBox{
+    transform: translateY(-50px);
+}
+.block{
+    width: 180px;
+    height: 60px;
+    margin: auto;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+    border-radius: 7px;
+    padding-right: 3px;
+}
+.icon{
+    margin-top: 22px;
+    margin-left: 5px;
+    width: 75px;
+    height: 90px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-image: url("icons8-timer-64.png");
+    z-index: 5;
+}
+.Timenumber{
+    width: 100px;
+    height: 43px;
+    padding: 6px;
+    background-color: aqua;
+    box-shadow: 0px 0px 3px black;
+    font-size: 40px;
+    margin-left: 10px;
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+}
+div .innerBox{
+    margin: 5% 28%;
+    width: 42%;
+    height: 30%;
+    padding-bottom: 20px;
+    display: block;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px lightgoldenrodyellow;
+}
+ul{
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+    /* display: inline-flex; */
+}
+input{
+    cursor: pointer;
+}
+li{
+    padding-top: 10px;
+    padding-left: auto;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    cursor: pointer;
+}
+.question{
+    /* width: 100%; */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: aqua;
+    margin: 0;
+}
+.submitBtn:hover{
+    background-color: lightblue;
+    text-shadow: 1px 1px 0.5px black ;
+    box-shadow: 0 0 3px black;
+}
+.containerBtn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.submitBtn{
+    font-size: 18px;
+    width: 100px;
+    height: 30px;
+    margin:auto;
+    border-radius: 5px;
+    background-color: rgb(220, 246, 255);
+    cursor: pointer;
+}
+.submitBtn:hover{
+    background-color: lightblue;
+    text-shadow: 1px 1px 0.5px black ;
+    box-shadow: 0 0 3px black;
+}
+.warning{
+    font-size: 17px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.warning2{
+    font-size: 17px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bluePara{
+    font-size: 22px;
+    font-family: sans-serif;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.resultPara{
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.radio1{
+    width: 18px;
+    height: 18px;
+}
+.resultBox{
+    width: 70%;
+    height: 150px;
+    background-color: black;
+    margin: auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 3px black;
+    opacity: 0.9;
+    text-align: center;
+    display: none;
+}
+div .resultPara{
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ----------------Percent diagram code------------- */
+.circleInner{
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px wheat;
+    margin: 12.5% 12%;
+    position: absolute;
+    z-index: 2;
+}
+.radialGradient{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: auto auto;
+    background-color: rgb(65, 64, 64, 0.7);
+    background-attachment: cover;
+    position: relative;
+}
+.percent{
+    font-size: 40px;
+    color: aliceblue;
+    margin: 30% 30%;
+}
+.signOfPercent{
+    font-size: 15px;
+    color: white;
+    margin-top: -43px;
+}
+#startFull{
+    font-size: 30px;
+    padding: 5px 20px;
+    position: absolute;
+    margin: 20% 50%;
+}
+.heading{
+    color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+@media only screen and (max-width: 740px) {
+    .quizBox h2{
+        font-size: 18px;
+    }
+    .quizBox ul li{
+        font-size: 13px; 
+    }
+    .warning2, .warning{
+        font-size: 12px; 
+    }
+    .bluePara{
+        font-size: 14px;
+    }
+    .submitBtn{
+        font-size: 15px;
+        width: 70px;
+        height: 25px;
+    }
+    .quizBox .innerBox{
+        margin: auto;
+        width: 90%;
+        height: 30%;
+        padding-bottom: 5px;
+        display: block;
+    }
+    .innerBox{
+        transform: translateY(25%);
+        /* height: 10px; */
+    }
+    .tim{
+        transform: scale(0.8,0.8);
+        margin: 10px;
+    }
+    .question{
+        width: 94.5%;
+        display: inline-block;
+    }
+}

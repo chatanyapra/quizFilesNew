@@ -1,0 +1,280 @@
+body {
+    background-image: url("timer.jpg");
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.burger {
+    float: right;
+    margin: -90px 20px;
+    width: 53px;
+    height: 35px;
+    background-color: rgb(158, 39, 39);
+    border-radius: 5px;
+    padding: 0 3px 3px 3px;
+    position: relative;
+    z-index: 2;
+}
+
+li {
+    list-style: none;
+    width: 40px;
+    height: 2px;
+    margin: 6.5px;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-radius: 1px;
+    position: absolute;
+    transition-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+.l1 {
+    margin: 10%;
+}
+
+.l2 {
+    display: block;
+    margin: 28% 6px;
+}
+
+.l3 {
+    margin: 45% 6px;
+}
+
+.instruction {
+    width: 240px;
+    height: 323px;
+    padding: 15px 20px;
+    font-size: 19px;
+    color: white;
+    border: 3px solid grey;
+    border-radius: 10px;
+    margin-top: -5.5%;
+    margin-right: 78px;
+    float: right;
+    background-color: transparent 0.2;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 1; */
+}
+.instrAlign{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.border {
+    width: 500px;
+    height: 630px;
+    border-radius: 10px;
+    margin: 100px 50px;
+    /* border: 5px solid green; */
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px black;
+}
+
+.image {
+    width: 1000px;
+    height: 60%;
+    transform: translateY(50%);
+    margin-left: -50%;
+    position: absolute;
+    background-image: linear-gradient(transparent, rgb(208, 229, 242), aqua, yellow, orange, red, green, transparent);
+    animation: anime;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+
+@keyframes anime {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.border::after {
+    content: " ";
+    position: absolute;
+    inset: 3px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.ppp {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+    position: relative;
+}
+
+.inputOfForm {
+    margin-top: 120px;
+    font-size: 17px;
+    width: 350px;
+    height: 50px;
+    padding: 0px 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* padding-right: 160px; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px white;
+    opacity: 0.9;
+    z-index: 3;
+}
+
+.inputOfForm:focus {
+    background-color: white;
+    opacity: 1;
+}
+
+.a1href {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.forgot {
+    font-size: 17px;
+    margin-top: -2px;
+    margin-left: 64px;
+    color: antiquewhite;
+    position: absolute;
+    z-index: 4;
+}
+
+.writeIcon {
+    width: 80%;
+    float: left;
+}
+
+.name1 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 60px;
+    width: 265px;
+    height: 50px;
+    padding: 0px 15px;
+    box-shadow: 2px 2px 5px white;
+    position: absolute;
+    border-radius: 20px;
+    opacity: 0.9;
+    z-index: 4;
+    /* margin-left: 70px; */
+}
+
+.name1:focus {
+    width: 350px;
+    background-color: white;
+    opacity: 1;
+    z-index: 5;
+}
+
+.writeIcon2 {
+    position: relative;
+    margin-top: 100px;
+    margin-left: -16px;
+    display: flex;
+}
+
+.name2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 80px;
+    width: 265px;
+    height: 50px;
+    padding: 0px 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px white;
+    position: absolute;
+    opacity: 0.9;
+    z-index: 4;
+}
+
+.name2:focus {
+    width: 350px;
+    background-color: white;
+    opacity: 1;
+    z-index: 5;
+}
+
+.icon1 {
+    margin: 13%;
+    margin-left: 75%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 4;
+    transform: rotateZ(10deg);
+}
+
+.icon2 {
+    margin: 17%;
+    margin-left: 75%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 4;
+    transform: rotateZ(10deg);
+}
+
+#img11 {
+    background-image: url("maleimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translate(0%, -50%);
+    border: 3px solid brown;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    margin-left: 225px;
+    /* margin: 500px; */
+    z-index: 7;
+    display: block;
+    position: absolute;
+    box-shadow: 2px 2px 10px brown;
+}
+
+#img11 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.imgbut {
+    color: palevioletred;
+}
+
+#passwordSubmit {
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-top: 55%;
+    margin-left: 79%;
+    border-radius: 7px;
+    box-shadow: -2px -3px 5px white;
+    float: right;
+    position: absolute;
+    z-index: 6;
+    opacity: 0.9;
+}
+
+#passwordSubmit:active {
+    box-shadow: 0px 0px 1px white;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
